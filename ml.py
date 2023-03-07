@@ -84,17 +84,15 @@ def a(val, my_dict):
 
 def ml():
     st.header("Our Prediction Process")
-    st.write("""
-		The Prediction Page of this WebApp asks users to provide key medical information such as age, 
-		gender, blood pressure, cholesterol levels, and other relevant factors that may contribute to 
-		heart disease. Based on this information, the WebApp uses machine learning algorithms to predict 
-		the likelihood of the user developing heart disease.
+    st.write("""The Prediction Page of this WebApp asks users to provide key medical information such as age, 
+gender, blood pressure, cholesterol levels, and other relevant factors that may contribute to 
+heart disease. Based on this information, the WebApp uses machine learning algorithms to predict 
+the likelihood of the user developing heart disease.
 		
-		The machine learning algorithms used in this WebApp are trained on a dataset obtained from
- 		https://archive.ics.uci.edu/ml/datasets/heart+disease, which is a reliable source for heart 
- 		disease data. By analyzing this data and identifying patterns, the algorithms can predict the 
- 		user's risk level for heart disease with a high degree of accuracy.
-				""")
+The machine learning algorithms used in this WebApp are trained on a dataset obtained from
+https://archive.ics.uci.edu/ml/datasets/heart+disease, which is a reliable source for heart 
+disease data. By analyzing this data and identifying patterns, the algorithms can predict the 
+user's risk level for heart disease with a high degree of accuracy.""")
 
     st.markdown(attribute)
 

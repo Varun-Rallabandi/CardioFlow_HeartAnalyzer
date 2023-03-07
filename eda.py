@@ -16,10 +16,10 @@ def eda():
 	choice = st.sidebar.selectbox("Submenu", submenu)
 
 	if choice == "Descriptive":
-		st.subheader("This is our data")
+		st.subheader("Data from Data Set")
 		st.dataframe(df)
 
-		st.subheader("Here are the statistical values for all the numerical columns")
+		st.subheader("Statistical Values for all the Numerical Columns")
 		st.dataframe(df.describe())
 
 		col1, col2 = st.columns(2)
@@ -53,31 +53,43 @@ def eda():
 
 		st.write("""
 
-# EDA Using Plots 
+# Data Analytics
 
-Data visualization is the graphical representation of information and data. By using visual elements 
-like charts, graphs, and maps, data visualization tools provide an accessible way to see and understand trends, 
-outliers, and patterns in data.
+
+
+The purpose of data visualization is to help users quickly understand the data and
+ draw insights from it. This can include various charts and graphs, such as bar charts, 
+ line charts, scatter plots, and more, to help users see patterns, trends, and relationships 
+ within the data. Data visualization can also help identify outliers and anomalies that might be 
+ hidden in tabular data. By presenting data in a visually appealing and interactive way, 
+ data visualization can make complex data more accessible to a wider audience.
 
 ### Count plots and Bar Plots
 
-A countplot is kind of likea histogram or a bar graph for some categorical area. It simply shows the number 
-of occurrences of an item based on a certain type of category.
+A countplot is a type of bar chart that displays the frequency or count of 
+values in a categorical variable. It provides a visual representation of the number 
+of observations in each category, allowing for quick comparisons between categories.
 
-A barplot (or barchart) is one of the most common types of graphic. It shows the relationship between a 
-numeric and a categoric variable. Each entity of the categoric variable is represented as a bar. The size of the bar represents its numeric value.
+A barplot is a graphical display of data using bars of different heights to 
+represent the values in a dataset. It is commonly used to compare the values 
+of different categories, with the height of each bar representing the corresponding value.
 
 ### Pie Chart
 
-A pie chart shows how some total amount is divided among distinct categories as a circle
- (the namesake pie) divided into radial slices. Each category is associated with a single slice whose 
- size corresponds with the category's proportion of the total.
+A pie chart is a circular chart that is divided into sectors to 
+represent numerical proportions. The size of each sector is proportional to 
+the value it represents, and the chart is often used to show the composition 
+of a whole or the distribution of different categories within a dataset.
+
 
 ### KDE Plots
 
-A density plot is a representation of the distribution of a numeric variable. It uses a kernel density 
-estimate to show the probability density function of the variable (see more). It is a smoothed version of 
-the histogram and is used in the same concept.
+A KDE (Kernel Density Estimate) plot is a type of data visualization 
+that is used to represent the distribution of a dataset. It is created by smoothing 
+a histogram of the data using a kernel function to estimate the probability density 
+function of the data. The resulting plot shows the shape of the data distribution, 
+with the peaks indicating the areas of highest density.
+
 
 ### Scatter Plot
 
